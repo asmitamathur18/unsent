@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>unsent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="title">unsent</h1>
+    <p class="subtitle">messages you never sent.</p>
+
+    <div id="feed"></div>
+
+    <div class="input-box">
+      <textarea id="messageInput" placeholder="write something you never sent…"></textarea>
+      <button id="sendBtn">post</button>
+    </div>
+  </div>
+
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyC3j3yGzrQlw_YnxsHu00M4jV3bF2_KxRQ",
+      authDomain: "unsent-d6c64.firebaseapp.com",
+      projectId: "unsent-d6c64",
+      storageBucket: "unsent-d6c64.appspot.com",
+      messagingSenderId: "912557715048",
+      appId: "1:912557715048:web:501c96c6fa5b86029a95dd"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
